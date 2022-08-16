@@ -68,6 +68,7 @@ var waypoints = $('.a').waypoint(function(direction){
 
   $(".darkmodet").click(function(){
     $("body").toggleClass("dark");
+      $(".darkmode").toggleClass("flip");
     if($("body").hasClass("dark")){
         $(".darkmode").html("<i class=\"uil uil-sun\"></i>").css("color", "white");
     }else {
@@ -77,6 +78,8 @@ var waypoints = $('.a').waypoint(function(direction){
 
   $(".pc").click(function(){
     $("body").toggleClass("indigo");
+      $(" html, body").removeClass("dark");
+    $(".darkmode").html("<i class=\"uil uil-moon\"></i>").removeClass("flip");
     if($("body").hasClass("indigo")){
         $(".pc").css("border", "2px solid #003347");
         $(".purple").css("background", " #003347");
