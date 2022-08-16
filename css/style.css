@@ -25,6 +25,9 @@
     --container-width-md: 92%;
     --transition: all .4s ease;
 }
+.flip{
+    transform: rotate(360deg);
+}
 .indigo{
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
